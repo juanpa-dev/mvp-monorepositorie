@@ -9,125 +9,53 @@ const config: Omit<Config, 'content'> = {
           'conic-gradient(from 180deg at 50% 50%, #2a8af6 0deg, #a853ba 180deg, #e92a67 360deg)'
       },
       colors: {
-        gray: {
-          '50': '#f9fafb',
-          '100': '#f4f5f7',
-          '200': '#e5e7eb',
-          '300': '#d2d6dc',
-          '400': '#9fa6b2',
-          '500': '#6b7280',
-          '600': '#4b5563',
-          '700': '#374151',
-          '800': '#252f3f',
-          '900': '#161e2e'
+        primary: {
+          DEFAULT: '#8548EA', // Usando indigo-500 como color primario por defecto
+          light: '#C2A3F4', // Usando indigo-400 para una versión más clara
+          dark: '#21123A' // Usando indigo-600 para una versión más oscura
         },
-        coral: {
-          '50': '#fdf2f2',
-          '100': '#fde8e8',
-          '200': '#fbd5d5',
-          '300': '#f8b4b4',
-          '400': '#f98080',
-          '500': '#f05252',
-          '600': '#e02424',
-          '700': '#c81e1e',
-          '800': '#9b1c1c',
-          '900': '#771d1d'
+        secondary: {
+          DEFAULT: '#f05252', // Usando coral-500 como color secundario por defecto
+          light: '#f8b4b4', // Usando coral-300 para una versión más clara
+          dark: '#e02424' // Usando coral-600 para una versión más oscura
         },
-        pumpkin: {
-          '50': '#fff8f1',
-          '100': '#feecdc',
-          '200': '#fcd9bd',
-          '300': '#fdba8c',
-          '400': '#ff8a4c',
-          '500': '#ff5a1f',
-          '600': '#d03801',
-          '700': '#b43403',
-          '800': '#8a2c0d',
-          '900': '#73230d'
+        error: {
+          DEFAULT: '#e74694', // Usando cerise-500 como color de error por defecto
+          light: '#f8b4d9', // Usando cerise-300 para una versión más clara
+          dark: '#d61f69' // Usando cerise-600 para una versión más oscura
         },
-        orange: {
-          '50': '#fdfdea',
-          '100': '#fdf6b2',
-          '200': '#fce96a',
-          '300': '#faca15',
-          '400': '#e3a008',
-          '500': '#c27803',
-          '600': '#9f580a',
-          '700': '#8e4b10',
-          '800': '#723b13',
-          '900': '#633112'
+        warning: {
+          DEFAULT: '#ff5a1f', // Usando pumpkin-500 como color de advertencia por defecto
+          light: '#fdba8c', // Usando pumpkin-300 para una versión más clara
+          dark: '#d03801' // Usando pumpkin-600 para una versión más oscura
         },
-        turquoise: {
-          '50': '#f3faf7',
-          '100': '#def7ec',
-          '200': '#bcf0da',
-          '300': '#84e1bc',
-          '400': '#31c48d',
-          '500': '#0e9f6e',
-          '600': '#057a55',
-          '700': '#046c4e',
-          '800': '#03543f',
-          '900': '#014737'
+        success: {
+          DEFAULT: '#01BD4C', // Usando turquoise-500 como color de éxito por defecto
+          light: '#BFEED2', // Usando turquoise-300 para una versión más clara
+          dark: '#00973C' // Usando turquoise-600 para una versión más oscura
         },
-        beach: {
-          '50': '#edfafa',
-          '100': '#d5f5f6',
-          '200': '#afecef',
-          '300': '#7edce2',
-          '400': '#16bdca',
-          '500': '#0694a2',
-          '600': '#047481',
-          '700': '#036672',
-          '800': '#05505c',
-          '900': '#014451'
+        info: {
+          DEFAULT: '#3f83f8', // Usando azure-500 como color de información por defecto
+          light: '#a4cafe', // Usando azure-300 para una versión más clara
+          dark: '#1c64f2' // Usando azure-600 para una versión más oscura
         },
-        azure: {
-          '50': '#ebf5ff',
-          '100': '#e1effe',
-          '200': '#c3ddfd',
-          '300': '#a4cafe',
-          '400': '#76a9fa',
-          '500': '#3f83f8',
-          '600': '#1c64f2',
-          '700': '#1a56db',
-          '800': '#1e429f',
-          '900': '#233876'
+        purple: {
+          '100': '#E0D1F9',
+          '200': '#C2A3F4',
+          '300': '#A375EF',
+          '400': '#9D6CEE',
+          '500': '#8548EA',
+          '600': '#422475',
+          '700': '#21123A'
         },
-        blue: {
-          '50': '#f0f5ff',
-          '100': '#e5edff',
-          '200': '#cddbfe',
-          '300': '#b4c6fc',
-          '400': '#8da2fb',
-          '500': '#6875f5',
-          '600': '#5850ec',
-          '700': '#5145cd',
-          '800': '#42389d',
-          '900': '#362f78'
-        },
-        indigo: {
-          '50': '#f6f5ff',
-          '100': '#edebfe',
-          '200': '#dcd7fe',
-          '300': '#cabffd',
-          '400': '#ac94fa',
-          '500': '#9061f9',
-          '600': '#7e3af2',
-          '700': '#6c2bd9',
-          '800': '#5521b5',
-          '900': '#4a1d96'
-        },
-        cerise: {
-          '50': '#fdf2f8',
-          '100': '#fce8f3',
-          '200': '#fad1e8',
-          '300': '#f8b4d9',
-          '400': '#f17eb8',
-          '500': '#e74694',
-          '600': '#d61f69',
-          '700': '#bf125d',
-          '800': '#99154b',
-          '900': '#751a3d'
+        green: {
+          '100': '#E5F8ED',
+          '200': '#BFEED2',
+          '300': '#99E4B7',
+          '400': '#66D793',
+          '500': '#33CA6F',
+          '600': '#01BD4C',
+          '700': '#00973C'
         }
       }
     }

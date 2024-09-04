@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Card } from '@repo/ui/card';
 
-import { AvatarElements } from '@repo/ui';
+import { AvatarElements, Button } from '@repo/ui';
 
 function Gradient({
   conic,
@@ -65,7 +65,13 @@ export default function Page(): JSX.Element {
               children={<></>}
               href="https://vercel.com"
             />
-            <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            <Button  variant="primary" size="sm">
+              Click Me
+            </Button>
+            <Button variant="success" size="lg">
+              Click Me
+            </Button>
+            <button className="bg-purple-100 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
               Click Me
             </button>
             By{' '}

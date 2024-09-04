@@ -9,14 +9,13 @@
   ],
   "exports": {
     "./styles.css": "./dist/index.css",
-    "./card": "./src/components/card.tsx",
     ".": "./src/index.tsx"
   },
   "license": "MIT",
   "scripts": {
     "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
     "lint": "eslint src/",
-    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
+    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch ",
     "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
@@ -34,6 +33,11 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@radix-ui/colors": "^3.0.0"
+    "@radix-ui/colors": "^3.0.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.2",
+    "tailwind-variants": "^0.2.1"
   }
 }
